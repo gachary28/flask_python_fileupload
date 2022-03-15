@@ -15,7 +15,7 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 def upload_file():   
  return render_template('upload.html')
 
-@app.route('/display', methods = ['GET', 'POST'])
+@app.route('/content', methods = ['GET', 'POST'])
 def save_file():
     if request.method == 'POST':
         try:
